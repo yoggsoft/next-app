@@ -1,9 +1,11 @@
 import type { NextPage } from 'next'
-import { Container, Grid, Paper } from '@mui/material';
+import {
+  Container,
+  Grid
+} from '@mui/material';
 import TimeSlotManager from '../app/modules/TimeSlotManager';
 
 const Home: NextPage = (props) => {
-
   return (
     <Container maxWidth={false}>
       <Grid container justifyContent='center'>

@@ -1,12 +1,12 @@
 
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import { CompanyTimeSlot } from '../../types';
-import { formatDateByHour } from '../../utils';
-import Block from '../Block';
+import { CompanyTimeSlot } from '../types';
+import { formatDateByHour } from '../utils';
+import Block from './Block';
 
 interface IBlock {
-  reservation: CompanyTimeSlot | undefined
+  reservation?: CompanyTimeSlot | undefined
 }
 
 export default function ReservationBlock ({ reservation } : IBlock) {

@@ -11,3 +11,13 @@ export function formatDateByDate (hour: string) {
 export function formatDateByDay (hour: string) {
 	return moment(hour).format('LLLL');
 }
+
+export const weekdays = [
+	'Sunday',
+	'Monday',
+	'Tuesday',
+	'Wednesday',
+	'Thursday',
+	'Friday',
+	'Saturday'
+];

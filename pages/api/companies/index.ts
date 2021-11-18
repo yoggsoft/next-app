@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import TimeSlots from '../../public/time_slots.json';
-import { CompaniesData } from '../../app/types';
+import TimeSlots from '../../../public/time_slots.json';
+import { CompaniesData } from '../../../app/types';
 
 export default function handler(
   req: NextApiRequest,
