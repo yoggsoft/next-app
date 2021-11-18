@@ -6,7 +6,7 @@ interface IBlock {
 
 export default function Block ({ children }: IBlock) {
   return (
-    <ButtonBase sx={{ height: 80, width: '100%' }}>
+    <ButtonBase sx={{ height: 60, width: '100%' }}>
       {children}
     </ButtonBase>
   );

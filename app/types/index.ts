@@ -13,3 +13,9 @@ export type Company = {
   type: string,
   time_slots: Array<TimeSlot>
 }
+
+export type CompanyTimeSlot = {
+  start_time: string,
+  end_time: string,
+  company_id: number
+}
