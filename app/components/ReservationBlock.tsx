@@ -12,19 +12,19 @@ interface BlockProps {
 export default function ReservationBlock ({ reservation } : BlockProps) {
   return (
     <Block>
-			{reservation && (
-				<Box sx={{
-					display: 'flex',
-					textAlign: 'center',
-					alignItems: 'center',
-					flexDirection: 'column'
-				}}>
-					<Typography fontWeight='bold'>Reservation:</Typography>
-					<Typography>
-						{`${formatDateByHour(reservation.start_time)} - ${formatDateByHour(reservation.end_time)}`}
-					</Typography>
-				</Box>
-			)}
+      {reservation && (
+        <Box sx={{
+          display: 'flex',
+          textAlign: 'center',
+          alignItems: 'center',
+          flexDirection: 'column'
+        }}>
+          <Typography fontWeight='bold'>Reservation:</Typography>
+          <Typography>
+            {`${formatDateByHour(reservation.start_time)} - ${formatDateByHour(reservation.end_time)}`}
+          </Typography>
+        </Box>
+      )}
     </Block>
   );
 }
