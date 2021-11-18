@@ -14,19 +14,7 @@ const fetchCompaniesData = async () => {
     }).catch(err => {});
 };
 
-// const initialReducerState = {
-
-// }
-
-// const reservationReducer = (state, action) => {
-//   switch (action) {
-//     case :
-       
-//   }
-// }
-
 export default function TimeSlotManager () {
-  // const [state, dispatch] = useReducer(reservationReducer, initialReducerState);
   const [companies, setCompanies] = useState<Company[]>([]);
   const [listOfReservations, setListOfReservations] = useState<CompanyTimeSlot[]>([]);
 
@@ -44,10 +32,7 @@ export default function TimeSlotManager () {
       removeReservation(newSelectedSlot);
     } else if (companyAlreadyHasReservation(newSelectedSlot)) {
       const newList = listOfReservations.filter(item => item.company_id === newSelectedSlot.company_id);
-      console.log({newList})
-      // newList.push(newSelectedSlot);
-      setListOfReservations(newList)
-      // setListOfReservations([...newList, newSelectedSlot]);
+      setListOfReservations([...newList, newSelectedSlot]);
     } else {
       addReservation(newSelectedSlot);
     }

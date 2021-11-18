@@ -5,11 +5,11 @@ import { CompanyTimeSlot } from '../types';
 import { formatDateByHour } from '../utils';
 import Block from './Block';
 
-interface IBlock {
+interface BlockProps {
   reservation?: CompanyTimeSlot | undefined
 }
 
-export default function ReservationBlock ({ reservation } : IBlock) {
+export default function ReservationBlock ({ reservation } : BlockProps) {
   return (
     <Block>
 			{reservation && (

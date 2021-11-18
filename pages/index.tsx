@@ -5,7 +5,7 @@ import {
 } from '@mui/material';
 import TimeSlotManager from '../app/modules/TimeSlotManager';
 
-const Home: NextPage = (props) => {
+const Home: NextPage = () => {
   return (
     <Container maxWidth={false}>
       <Grid container justifyContent='center'>

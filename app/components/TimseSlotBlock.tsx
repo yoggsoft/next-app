@@ -1,6 +1,6 @@
 
 import { Button } from '@mui/material';
-import { CompanyTimeSlot, TimeSlot } from '../types';
+import { TimeSlot } from '../types';
 import { formatDateByHour } from '../utils';
 
 interface TimeSlotBlockProps {
